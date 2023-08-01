@@ -22,9 +22,10 @@ cp .aws/credentials.example .aws/credentials
 # building and running the container
 docker build -t aws-workshop .
 docker run -v ./.aws/:/root/.aws/ -v ${PWD}:/stack aws-workshop sleep infinity
-docker exec -it aws-workshop bash
+docker exec -it container_id bash
 
 # inside the container
+npm install
 npm run build
 npm run deploy
 ```
