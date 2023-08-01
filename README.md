@@ -26,7 +26,6 @@ docker exec -it container_id bash
 
 # inside the container
 npm install
-npm run build
 npm run deploy
 ```
 
