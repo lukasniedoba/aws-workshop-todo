@@ -8,5 +8,6 @@ COPY package.json .
 COPY package-lock.json .
 COPY sst.config.ts .
 COPY tsconfig.json .
+COPY ./.aws /root/.aws
 
 RUN npm install
